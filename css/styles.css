@@ -377,8 +377,14 @@ img{
     padding-bottom: var(--section--pb) ;
 }
 
+.clients-item {
+    display: flex;
+    border: 1px inset yellowgreen ;
+}
+
 .clients-list {
     display: flex;
+    justify-content: space-between;
     
 }
 
