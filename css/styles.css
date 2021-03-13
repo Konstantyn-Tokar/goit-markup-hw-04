@@ -426,6 +426,11 @@ img{
     border-radius: var(--radius);
 }
 
+.clients-item:hover,
+.clients-item:focus {
+    border: 1px solid var(--accent-color);
+}
+
 .clients-link {
     display: flex;
     width: 100%;
