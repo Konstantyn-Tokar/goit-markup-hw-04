@@ -160,6 +160,10 @@ img{
     color: var(--accent-color);
 }
 
+.chosen {
+    color: var(--accent-color);
+}
+
 .tel-link {
     display: flex;
     align-items: center;
@@ -271,8 +275,9 @@ img{
 .features-icon-box {
     display: flex;
     justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    align-items: center;
+    width: 270px;
+    height: 120px;
     margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: var(--radius);
@@ -487,8 +492,14 @@ img{
     color: var(--color-footer-contakts);
 }
 
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: var(--accent-color);
+}
+
 .footer .container  {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-box-networks {
@@ -540,8 +551,6 @@ img{
 
 /* =============== END FOOTER =============== */
 
-
-
 /* =============== HEADER PARTFOLIO =============== */
 
 .filter {
@@ -559,14 +568,10 @@ img{
     margin-right: 8px;
 }
 
-.filter-button {
-    background: #F5F4FA;
-    border-radius: var(--radius);
-}
-
 .filter-item:nth-child(5) {
     margin-right: 8px;
 }
+
 
 .filter-button {
     padding: 6px 22px;
@@ -578,6 +583,8 @@ img{
     line-height: 1.62;
     cursor: pointer;
     letter-spacing: 0.03em;
+    background: #F5F4FA;
+    border-radius: var(--radius);
     color:var(--color-text);
 }
 
@@ -585,6 +592,16 @@ img{
 .filter-button:focus {
     color: var(--color-text-light-fon);
     background-color:var(--accent-color);
+    box-shadow: 
+    0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* НЕ ПОНЯТНО ПРАВИЛЬНО ЛИ ЭТО  */
+.chosen-button {
+    background-color:var(--accent-color);
+    color: var(--color-text-light-fon);
     box-shadow: 
     0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 1px 2px rgba(0, 0, 0, 0.08), 
@@ -608,14 +625,13 @@ img{
     margin-bottom: 30px;
 }
 
-.project-link:hover, .portfolio-card-link:focus {
+.project-link:hover, 
+.project-link:focus {
     box-shadow: 
     0px 1px 1px rgb(0 0 0 / 12%),
     0px 4px 4px rgb(0 0 0 / 6%), 
     1px 4px 6px rgb(0 0 0 / 16%);
 }
-
-
 
 .des-project-images {
     padding: 20px 24px;
@@ -641,4 +657,6 @@ img{
 
 color: var(--color-aссent);
 }
+
+/* =============== END PARTFOLIO RROJECT =============== */
 
