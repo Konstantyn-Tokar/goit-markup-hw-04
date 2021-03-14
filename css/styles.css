@@ -426,21 +426,23 @@ img{
 .clients-item {
     width: 170px;
     height: 90px;
-    border: 1px solid #AFB1B8;
-    border-radius: var(--radius);
+
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover ,
+.clients-link:focus {
     border: 1px solid var(--accent-color);
 }
 
 .clients-link {
+    box-sizing:border-box;
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: var(--radius);
 }
 
 .clients-icon {
@@ -448,7 +450,7 @@ img{
 }
 
 .clients-link:hover .clients-icon,
-.clients-link:focus .contacts-icon {
+.clients-link:focus .clients-icon {
   fill: var(--accent-color)
 }
 
